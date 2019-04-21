@@ -1,17 +1,24 @@
 <template>
   <div  class="login">
-
+    <section class="login-btn">
+      <span>登陆</span>
+      <span>注册</span>
+    </section>
+   
   </div>
 </template>
 <script>
 export default {
-  name: "login"
+  name: 'login'
 }
 </script>
-<style scoped>
+<style lang="less" rel="stylesheet/less" scoped>
   .login{
-    width: 200px;
-    height: 100px;
+    .login-btn{
+      line-height: 50px;
+      span{
+        margin: 20px;
+      }
+    }    
   }
 </style>
- 

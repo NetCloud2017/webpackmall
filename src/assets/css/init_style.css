@@ -1,0 +1,20 @@
+html, body {
+  overflow: hidden;
+  width: 100%;
+  margin: 0px;
+}
+img, input, select, textarea{
+  display: block;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  padding: 0;
+  margin: 0;
+  font-size: 0px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}

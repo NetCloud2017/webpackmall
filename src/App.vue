@@ -12,6 +12,5 @@ export default {
 #app {
   min-width: 800px;
   min-height: 400px;
-  background: #ccc;
 }
 </style>

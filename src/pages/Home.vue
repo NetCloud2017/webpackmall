@@ -22,5 +22,6 @@ export default {
 <style scoped>
   .home_view{
     width: auto;
+    padding: 20px 30px 0;
   }
 </style>
