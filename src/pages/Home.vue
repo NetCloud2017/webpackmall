@@ -1,10 +1,18 @@
 <template>
   <div class="home_view">
     <Homeheader></Homeheader>
+    <el-row>
+      <el-col>
+        <main class="main">
+          <home-aside></home-aside>
+        </main>
+      </el-col>
+    </el-row>
   </div>
 </template>
 <script>
 import Homeheader from '../components/header/Homeheader'
+import HomeAside from '../components/aside/HomeAside'
 export default {
   name: 'Home',
   data () {
@@ -13,7 +21,8 @@ export default {
     }
   },
   components: {
-    Homeheader
+    Homeheader,
+    HomeAside
   }
 }
 </script>
