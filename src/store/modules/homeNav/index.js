@@ -443,8 +443,7 @@ const setExpand= () => {
 }
 
 const state = {
-  menus,
-
+  menus
 }
 const mutations = {
   initMenus (state, payload) {
