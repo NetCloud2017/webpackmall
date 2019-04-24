@@ -4,7 +4,7 @@
     <el-row>
       <el-col>
         <main class="main">
-          <home-aside></home-aside>
+          <home-aside :menus="menus"></home-aside>
         </main>
       </el-col>
     </el-row>
@@ -17,6 +17,7 @@ export default {
   name: 'Home',
   data () {
     return {
+      menus: this.$store.homeNav.menus,
       msg: 'Welcome to Your Vue.js App'
     }
   },
