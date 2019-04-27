@@ -20,7 +20,20 @@ function ajax (url, data, type = 'GET') {
   }
 }
 
-export default ajax
+// 合并请求
+
+function  togeterSend( req1, req2) {
+  axios.all([req1(), req2()])
+  .then(axios.spread((res1, res2) => {
+    console.log(res1, res2);
+  })
+}
+
+
+export default {
+  ajax,
+  togeterSend
+}
 
 // axios(config) 
 // config = 
