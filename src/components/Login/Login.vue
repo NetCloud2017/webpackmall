@@ -28,7 +28,7 @@ export default {
         // 请求发出之前执行
         this.show = true;
         if (localStorage.getItem('token')) {
-          config.headers.token = localStorage.getItem('token');
+          config.headers['token'] = localStorage.getItem('token');
         }
         return config
       })
