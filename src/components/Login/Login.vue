@@ -4,13 +4,12 @@
       <span>登陆</span>
       <span>注册</span>
     </section>
-   
   </div>
 </template>
 <script>
 import axios from 'axios';
 import func from '../../../vue-temp/vue-editor-bridge';
-
+import Dialog from '../dialog/index';
 export default {
   name: 'login',
   data () {
@@ -43,6 +42,9 @@ export default {
         return res.config
       })
     }
+  },
+  components: {
+    Dialog
   }
 }
 </script>
